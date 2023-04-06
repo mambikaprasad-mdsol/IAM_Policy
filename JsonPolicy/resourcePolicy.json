@@ -1,0 +1,41 @@
+{
+    "Policy":[
+        {
+            "Version": "2012-10-17",
+            "Statement":
+            [
+                {
+                    "Sid": "VisualEditor1",
+                    "Effect": "Allow",
+                    "Action":
+                    [
+                        "s3:GetObject",
+                        "s3:PutObject"
+                    ],
+                    "Resource": "*"
+                }
+            ]
+        },
+        
+        
+        {
+            "Version": "2012-10-17",
+            "Statement":
+            [
+                {
+                    "Sid": "VisualEditor1",
+                    "Effect": "Allow",
+                    "Action":
+                    [
+                        "sqs:SendMessage", 
+                        "sqs:ReceiveMessage"
+        
+                    ],
+                    "Resource": "*"
+                }
+            ]
+        }
+        
+    ]
+      
+}
