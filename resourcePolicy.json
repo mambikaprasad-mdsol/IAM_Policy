@@ -1,8 +1,8 @@
 {
     "Exist_Policy":[
         {          
-             "ExistPolicyName": ["arn:aws:iam::076395046979:policy/AmazonEKSClusterAutoscalerPolicy",
-                            "arn:aws:iam::076395046979:policy/service-role/Amazon-EventBridge-Scheduler-Execution-Policy-9f246d2b-9faf-4207-9dba-5a4cb98cc81b"]
+             "ExistPolicyName": ["arn:aws:iam::767904627276:policy/1x-cloudformation-green",
+                            "arn:aws:iam::767904627276:policy/1x-main-policy"]
             }
     ],
     "Policy":[
