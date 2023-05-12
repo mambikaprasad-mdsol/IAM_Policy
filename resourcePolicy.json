@@ -1,0 +1,49 @@
+{
+    "Exist_Policy":[
+        {          
+             "ExistPolicyName": ["arn:aws:iam::076395046979:policy/AmazonEKSClusterAutoscalerPolicy",
+                            "arn:aws:iam::076395046979:policy/service-role/Amazon-EventBridge-Scheduler-Execution-Policy-9f246d2b-9faf-4207-9dba-5a4cb98cc81b"]
+            }
+    ],
+    "Policy":[
+        {
+            "Version": "2012-10-17",
+            "Statement":
+            [
+                {
+                    "Sid": "VisualEditor1",
+                    "Effect": "Allow",
+                    "Action":
+                    [
+                        "s3:GetObject",
+                        "s3:PutObject"
+                    ],
+                    "Resource": "*",
+                    "PolicyName": "s3_policy"
+                }
+            ]
+        },
+
+
+        {
+            "Version": "2012-10-17",
+            "Statement":
+            [
+                {
+                    "Sid": "VisualEditor1",
+                    "Effect": "Allow",
+                    "Action":
+                    [
+                        "sqs:SendMessage", 
+                        "sqs:ReceiveMessage"
+
+                    ],
+                    "Resource": "*",
+                    "PolicyName": "sqs_policy"
+                }
+            ]
+        }
+
+    ]
+
+}
